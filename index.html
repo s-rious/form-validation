@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Practice Functions</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="registration">
+        <fieldset>                
+            <legend>Personal Details</legend>
+            <form name="registration" onSubmit="return validation()">
+                <label for="fName">First Name:</label><br/>
+                <input type="text" id="fName" name="fName" placeholder="First Name" class="form-style"><br/>
+                <label for="lName">Last Name:</label><br/>
+                <input type="text" id="lName" name="lName" placeholder="Last Name" class="form-style" ><br/>
+                <label for="gender">Gender:</label><br/>
+                <select name="gender" id="gender" class="form-select">
+                    <option value="" disable hidden>Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="nBinary">Non-Binary</option>
+                    <option value="other">Other</option>
+                </select><br/>
+                <label for="pNumber">Phone Number:</label><br/>
+                <input type="text" id="pNumber" name="pNumber" placeholder="Phone Number" class="form-style" ><br/>
+                <input type="submit" id="submit-button"></input>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
